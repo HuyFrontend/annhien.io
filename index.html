@@ -1,162 +1,39 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html lang="en" class="no-js ie ie8"><![endif]-->
-<!--[if IE 9]><html lang="en" class="no-js ie ie9"><![endif]-->
-<!--[if gt IE 9]><!-->
-<html lang="en" class="no-js">
-  <!--<![endif]-->
+<html>
   <head>
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
-    <title>Homepage</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="">
-    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/libs.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css"><![endif]-->
-    <link rel="stylesheet" href="css/print.css" media="print">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,500,700,900,700italic">
-    <script src="js/modernizr.js"></script>
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body class="home">
-    <div class="container">
-      <header>
-        <div class="grid-fluid">
-          <div class="row">
-            <div class="col-md-3 col-xs-8"><a href="index.html" title="Fri for Mobberi" class="logo"><img src="images/logo-1.png" alt="logo"/></a>
-            </div>
-            <div data-menu-control class="col-xs-4 col-md-1 group-menu right"><a href="#" title="search" class="search"></a><span class="hidden-md hidden-lg"><a href="#" title="menu" class="menu"></a></span>
-            </div>
-            <div class="col-md-8 col-xs-12 desktop-menu">
-              <ul class="main-menu">
-                <li><a href="index.html" title="Home">Home <span class="icon-arrow hidden-md hidden-lg"></span></a>
-                </li>
-                <li><a href="subpage-open.html" title="Om Mobning">Om Mobning <span class="icon-arrow hidden-md hidden-lg"></span></a>
-                </li>
-                <li><a href="subpage-listview.html" title="Dig Og Dit Barn">Dig Og Dit Barn <span class="icon-arrow hidden-md hidden-lg"></span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main>
-        <div class="form-search">
-          <form id="form-2" method="get" action="/search-result.html">
-            <div class="grid-fluid">
-              <div class="row">
-                <div class="col-xs-9 col-sm-10 col-md-11">
-                  <input type="text" name="key-search" id="keySearch" value="" class="input-1 text-input" placeholder="Søg efter f.eks. emner, personer eller nøgleord" data-placeholder=""/>
-                </div>
-                <div class="col-xs-3 col-sm-2 col-md-1">
-                  <input type="submit" name="søg" id="søg" value="søg" class="input-1 btn-1 send-btn"/>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div data-slider class="slider-header">
-          <div class="inner">
-            <div class="preview">
-              <ul class="slides">
-                <li>
-                  <figure class="img-wrap"><img src="images/upload/photo-1.jpg" alt="photo-9"/>
-                  </figure>
-                  <div class="caption">
-                    <div class="desc">Mobning er fortsat et stort og reelt problem for mange danske børn</div><a href="#" title="Læs mere" class="btn-1 primary-btn">Læs mere</a>
-                  </div>
-                </li>
-                <li>
-                  <figure class="img-wrap"><img src="images/upload/photo-1.jpg" alt="photo-10"/>
-                  </figure>
-                  <div class="caption">
-                    <div class="desc">Mobning er fortsat et stort og reelt problem for mange danske børn</div><a href="#" title="Læs mere" class="btn-1 primary-btn">Læs mere</a>
-                  </div>
-                </li>
-                <li>
-                  <figure class="img-wrap"><img src="images/upload/photo-1.jpg" alt="photo-9"/>
-                  </figure>
-                  <div class="caption">
-                    <div class="desc">Mobning er fortsat et stort og reelt problem for mange danske børn</div><a href="#" title="Læs mere" class="btn-1 primary-btn">Læs mere</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="controls">
-            <ul>
-              <li><a href="#" title="1">1</a>
-              </li>
-              <li><a href="#" title="2">2</a>
-              </li>
-              <li><a href="#" title="3">3</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <section>
-          <div data-banner class="home-page-banner">
-            <div data-item class="banner-block"><a href="index.html" title=""><img src="images/banner-1.jpg" alt="banner-1"/></a>
-            </div>
-            <div data-item class="banner-block"><a href="index.html" title=""><img src="images/banner-2.jpg" alt="banner-2"/></a>
-            </div>
-            <div data-item class="banner-block"><a href="index.html" title=""><img src="images/banner-3.jpg" alt="banner-3"/></a>
-            </div>
-            <div data-item class="banner-block"><a href="index.html" title=""><img src="images/banner-4.jpg" alt="banner-4"/></a>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="subscribe-block">
-          <div class="grid-fluid">
-            <div class="inner"><span class="label-1 font-size-1">Tilmeld Vores Nyhedsbrev</span><a href="#" title="Læs mere" class="small-text">Læs mere</a>
-            </div>
-            <form id="form-1" method="get" action="/submit-email" data-validate="" data-ajax-submit="" data-loading=".subscribe-block .loading" class="form-1">
-              <div class="form-group">
-                <input type="email" name="submitted[e_mail]" id="email" value="" class="input-1 text-input" placeholder="Din e-mail adresse" required="" data-placeholder="" data-email=""/>
-                <input type="submit" name="send" id="send" value="Send" class="input-1 btn-1 send-btn"/>
-              </div>
-            </form>
-          </div>
-          <div class="loading hidden"><img src="images/loading.gif" alt="Loading"/>
-          </div>
-        </div>
-        <div class="contact-block">
-          <div class="grid-fluid">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="contact-info-block editor-2">
-                  <p>Fri For Mobberi</p>
-                  <p>Amaliegade 8 B<br>DK-1256 København K.</p>
-                  <p><span>Tlf.:</span><a href="tel:45273020" title="45 27 30 20">45 27 30 20</a><br><span>Mail:</span><a href="mailto:info@Maryfonden.dk" title="Info@Maryfonden.dk">Info@Maryfonden.dk</a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <ul class="social-list">
-                  <li><a href="#" title="Facebook" target="_blank" class="facebook"><img src="images/icon-facebook.png" alt="Facebook"/></a>
-                  </li>
-                  <li><a href="#" title="Twitter" target="_blank" class="twitter"><img src="images/icon-twitter.png" alt="Twitter"/></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="partner-list"><a href="#" title="Mary Fonden" target="_blank" class="logo-partner"><img src="images/logo-mary.png" alt="Mary Fonden"/></a><a href="#" title="Red Barnet" target="_blank" class="logo-partner"><img src="images/logo-red-barnet.png" alt="Red Barnet"/></a>
-        </div>
-      </footer>
+  <body>
+    <div class="slideshow-container">
+      <div class="item fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="image/slide-1.jpg" style="width:100%">
+        <div class="text slide-caption">Caption Text</div>
+      </div>
+
+      <div class="item fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="image/slide-2.jpg" style="width:100%">
+        <div class="text slide-caption">Caption Two</div>
+      </div>
+
+      <div class="item fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="image/slide-3.jpg" style="width:100%">
+        <div class="text slide-caption">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <script src="js/l10n.js"></script>
-    <script src="js/libs.js"></script>
-    <script src="js/script.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>
-    <!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-    <noscript>JavaScript is off. Please enable to view full site.</noscript>
+  <br>
+
+  <div class="slide-dot">
+    <span class="dot dot-item" data-target="1" ></span>
+    <span class="dot dot-item" data-target="2" ></span>
+    <span class="dot dot-item" data-target="3" ></span>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
