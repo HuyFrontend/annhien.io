@@ -4,6 +4,7 @@ showSlides(slideIndex);
 function plusSlides(n) {
   console.log('n',n);
   console.log('slideIndex',slideIndex,n);
+  slideIndex = parseInt(slideIndex);
   showSlides(slideIndex += n);
 }
 
