@@ -2,8 +2,6 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  console.log('n',n);
-  console.log('slideIndex',slideIndex,n);
   slideIndex = parseInt(slideIndex);
   showSlides(slideIndex += n);
 }
@@ -16,7 +14,9 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName('item');
   var dots = document.getElementsByClassName('dot');
-  if (n > slides.length) {slideIndex = 1}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
@@ -26,6 +26,8 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = 'block';
   dots[slideIndex-1].className += ' active';
+  var activeSlide = slideIndex-1;
+  slides[activeSlide].querySelector('.slide-caption').html('Caption ' + activeSlide);
 }
 
 function initEvents () {

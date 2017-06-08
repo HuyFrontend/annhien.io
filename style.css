@@ -10,6 +10,10 @@
   display: none;
 }
 
+.slideshow-container .item image {
+  width: 100%;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
