@@ -1,16 +1,14 @@
 var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
+var plusSlides = (n) => {
   slideIndex = parseInt(slideIndex);
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+var currentSlide = (n) => {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+var showSlides = (n) => {
   var i;
   var slides = document.getElementsByClassName('item');
   var dots = document.getElementsByClassName('dot');
@@ -31,7 +29,9 @@ function showSlides(n) {
   slides[activeSlide].querySelector('.numbertext').innerHTML = slideIndex + '/' + slides.length;
 }
 
-function initEvents () {
+var initEvents = () => {
+  
+  showSlides(slideIndex);
   var dots = document.getElementsByClassName('dot-item');
   for (var i = 0, len = dots.length; i < len; i++) {
     dots[i].addEventListener('click', function () {
